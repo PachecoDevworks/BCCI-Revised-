@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BCCI</title>
+    <link rel="stylesheet" href="bcci.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner">
+        <h1>Welcome!</h1>
+        <h2>Click on the button to calculate your deduction.</h2>
+        <button class="btn">Click Me!</button>
+      </div>
+      <div class="outer hidden">
+        <h3 class="bcci">BCCI CALCULATOR</h3>
+        <!--  form container      -->
+        <div class="form-container">
+          <form class="form">
+            <label>Employee Name: </label>
+            <input
+              class="employee events"
+              type="text"
+              placeholder="Enter Fullname"
+              required
+            />
+            <br />
+            <div class="validator"></div>
+            <label>Company Name: </label>
+            <input
+              class="company events"
+              type="text"
+              placeholder="Enter Company name"
+              required
+            />
+            <br />
+            <label>Monthly Salary: </label>
+            <input
+              id="monthly-salary"
+              class="salary events"
+              type="number"
+              placeholder="Enter Monthly Salary"
+              required
+            />
+            <br />
+          </form>
+          <div class="error-div"><p class="error-msg"></p></div>
+          <button type="submit" class="resultBtn" id="resBtn">Calculate</button>
+          <!--        for names    -->
+          <div class="info hidden">
+            <div>
+              <h2 class="hsec">Employee Name:</h2>
+              <h2 class="hsec">Company Name:</h2>
+              <h2 class="hsec">Monthly Salary:</h2>
+            </div>
+            <div>
+              <h2 class="infoRes"></h2>
+              <h2 class="compRes"></h2>
+              <h2 class="salRes"></h2>
+            </div>
+          </div>
+          <!--        end of names    -->
+          <div class="result hidden">
+            <div class="contribution">
+              <h2 class="hsec">Income Tax:</h2>
+              <h2 class="hsec">SSS Contribution:</h2>
+              <h2 class="hsec">Pag-Ibig:</h2>
+              <h2 class="hsec">PhilHealth:</h2>
+            </div>
+
+            <div class="span">
+              <h2 class="tax">0.00</h2>
+              <h2 class="sss">0.00</h2>
+              <h2 class="pagIbig">0.00</h2>
+              <h2 class="philHealth">0.00</h2>
+            </div>
+          </div>
+          <!--     clicks   -->
+          <div class="goodbye hidden">
+            <!-- <div class="question">"Thank You For Using Our System &#128513"</div> -->
+            <div class="question">
+              "Thank You For Using Our System
+              <img
+                src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Beating%20Heart.png"
+                alt="Beating Heart"
+                width="25"
+                height="25"
+              />"
+            </div>
+            <div class="repeat">
+              <button class="exit1">Calculate Again?</button>
+              <button class="exit2">Exit</button>
+            </div>
+          </div>
+          <!--  end of clicks          -->
+        </div>
+      </div>
+    </div>
+
+    <script src="bcci.js"></script>
+  </body>
+</html>
